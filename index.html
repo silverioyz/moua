@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M.O.A - Marketplace Online Agrícola</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>M.O.A - Marketplace Online Agrícola</h1>
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre Nós</a></li>
+                <li><a href="#cooperativas">Cooperativas</a></li>
+                <li><a href="#contratar-servico">Contratar Serviço</a></li>
+                <li><a href="#login">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="login">
+            <h2>Login</h2>
+            <form>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" required>
+                <label for="celular">Número de Celular:</label>
+                <input type="tel" id="celular" required>
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" required>
+                <button type="submit">Entrar</button>
+            </form>
+        </section>
+
+        <section id="sobre">
+            <h2>Sobre Nós</h2>
+            <p>Somos um grupo de alunos estudantes de Agronomia da faculdade UniFio, estamos no 1º termo. O M.O.A é uma plataforma que conecta produtores rurais a cooperativas e prestadores de serviços.</p>
+        </section>
+
+        <section id="cooperativas">
+            <h2>Cooperativas</h2>
+            <button onclick="window.location.href='login_cooperativa.html'">Sou Cooperativa</button>
+            <ul>
+                <li>Cooperativa A - Produtos: Defensivos, Tratores</li>
+                <li>Cooperativa B - Produtos: Implementos Agrícolas</li>
+                <!-- Adicione mais cooperativas aqui -->
+            </ul>
+        </section>
+
+        <section id="contratar-servico">
+            <h2>Contratar Serviço</h2>
+            <button onclick="window.location.href='login_trabalhador.html'">Oferecer Serviço</button>
+            <ul>
+                <li>Tratorista A - Preço: R$100 - Serviços: Aragem</li>
+                <li>Tratorista B - Preço: R$150 - Serviços: Plantio</li>
+                <!-- Adicione mais trabalhadores aqui -->
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 M.O.A - Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
